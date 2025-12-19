@@ -4,60 +4,60 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
   {
-    title: '🩺 Mammogram Malignancy Detector',
-    desc: 'Hybrid CNN + YOLOv8 ensemble for full-image breast cancer detection with ROI preprocessing and sliding-window inference.',
-    ss: '/mamo.png',
-    tech: ['TensorFlow', 'Keras', 'OpenCV', 'YOLOv8'],
-    live: '#',
-    code: 'https://github.com/kunjdesai/mammo-detector'
+    title: '🐄 Bharat Pashudhan App',
+    desc: 'Bharat Pashudhan App is an AI-powered web application that identifies Indian cattle and buffalo breeds from images. Built with Deep Learning (CNN + Transfer Learning)',
+    ss: '/bpa.png',
+    tech: ['PyTorch', 'Torchvision', 'OpenCV', 'Matplotlib','CNN'],
+    live: 'https://indianbreedclassifier.streamlit.app/',
+    code: 'https://github.com/Aaronrao989/breed'
   },
   {
-  title: '🧠 Mental Health Analyzer',
-  desc: 'NLP-based system that analyzes user text to detect signs of anxiety, stress, and depression using sentiment analysis and transformer models.',
+  title: '🧠 Multimodal Analysis for Mental Health Detection',
+  desc: 'Mental health challenges are often expressed subtly online through a combination of language, emoji usage, and posting behavior.',
   ss: '/mentalhealth.jpg',
-  tech: ['Python', 'Transformers', 'NLTK', 'scikit-learn'],
-  live: 'https://mental-health-analyzer.streamlit.app/',
-  code: 'https://github.com/kunj2803/Mental-Health-Analyzer'
-  },
-  {
-    title: '🤖 Indian Sign Language Interpreter',
-    desc: 'Real-time gesture recognition and translation using Mediapipe + TensorFlow, enabling live sign-to-text interpretation.',
-    ss: '/ISL.png',
-    tech: ['Mediapipe', 'TensorFlow', 'React', 'Flask'],
-    live: '#',
-    code: 'https://github.com/kunjdesai/ISL-Interpreter'
-  },
-  {
-  title: '💼 Portfolio Website',
-  desc: 'A modern and responsive portfolio built with React and Framer Motion, showcasing projects, skills, and achievements with smooth animations and interactive UI.',
-  ss: '/portfolio.jpg',
-  tech: ['React', 'Framer Motion', 'Tailwind CSS'],
+  tech: ['Python', 'XGBoost', 'Scikit-learn', 'Emoji Sentiment Lexicon'],
   live: '#',
-  code: 'https://github.com/kunj2803/Kunj-Portfolio'
+  code: 'https://github.com/Aaronrao989/sentiment-insights-for-social-media-posts'
   },
   {
-    title: '💬 DocuChat – Gemini AI Chatbot',
-    desc: 'An intelligent document interaction app powered by Gemini API that understands and answers queries from uploaded PDFs.',
-    ss: '/Docuchat.png',
-    tech: ['Gemini API', 'LangChain', 'Python', 'Streamlit'],
-    live: 'https://docuchat-chatbot.streamlit.app/',
-    code: 'https://github.com/kunj2803/Docuchat-Chatbot'
+    title: '📄 LLM-Powered Resume Reviewer',
+    desc: 'An intelligent web application that leverages LLMs and ATS-style scoring to help candidates analyze and enhance their resumes.',
+    ss: '/resume.png',
+    tech: ['Scikit-learn + Joblib', 'PyMuPDF / pdfminer', 'Keyword extraction + semantic matching'],
+    live: 'https://llmresumeanalysis.streamlit.app/',
+    code: 'https://github.com/Aaronrao989/AI_Resume_Analysis'
   },
   {
-    title: '📊 ProfileX – Data Profiler',
-    desc: 'Smart data profiling and preprocessing web app for CSV datasets — feature summary, missing value handling, and visualization.',
-    ss: '/ProfileX.png',
-    tech: ['Streamlit', 'Pandas', 'Plotly'],
-    live: 'https://profilex.streamlit.app/',
-    code: 'https://github.com/kunjdesai/ProfileX'
+  title: '💼 Employee Salary Prediction using Machine Learning',
+  desc: 'A simple Machine Learning web app built with Streamlit to predict employee salaries based on their details such as age, experience, and other categorical features.',
+  ss: '/salary.webp',
+  tech: ['Python', 'Pandas & NumPy (Data Handling)', 'Joblib (Model Saving & Loading)'],
+  live: 'https://employee-salary-prediction-nicuwy2cnu5qvvekaqxf5y.streamlit.app/',
+  code: 'https://github.com/Aaronrao989/employee-salary-prediction'
   },
   {
-    title: '🧬 Breast Cancer Prediction',
-    desc: 'ML pipeline using SVC, Random Forest, and XGBoost with SMOTE for imbalanced dataset handling and model optimization.',
-    ss: '/breastpred.jpg',
-    tech: ['scikit-learn', 'XGBoost', 'Pandas'],
+    title: '🛒 Amazon Reviews Sentiment Analyzer',
+    desc: 'A simple AI-powered web app that analyzes Amazon product reviews to determine whether they are Positive, Neutral, or Negative — along with a confidence score.',
+    ss: '/sentiment.webp',
+    tech: ['Python', 'NLTK (Text preprocessing)', 'Scikit-learn (Model training)', 'Pandas & NumPy (Data handling)'],
+    live: 'https://sentiment-analyzer-yc9ljmwoasdk55f53qg7ym.streamlit.app/',
+    code: 'https://github.com/Aaronrao989/Sentiment-Analysis-of-Product-Reviews-using-Naive-Bayes'
+  },
+  {
+    title: '🧠 Smart Product Pricing — Multimodal ML Project',
+    desc: 'This project builds an AI-powered pricing model that predicts product prices by analyzing both textual and visual information.',
+    ss: '/amazon.png',
+    tech: ['Text-based TF-IDF features', 'CatBoost regression model', 'Precomputed image embeddings'],
+    live: 'https://amazon-ml-challenge-2025.streamlit.app/',
+    code: 'https://github.com/Aaronrao989/AMAZON-ML-Challenge-2025'
+  },
+  {
+    title: '🧠 Image Classification using CNN',
+    desc: 'This project is a beginner-friendly image classifier built using a Convolutional Neural Network (CNN) and deployed via Streamlit.',
+    ss: '/cnn.png',
+    tech: ['TensorFlow / Keras', 'NumPy' ,'Pillow'],
     live: '#',
-    code: 'https://github.com/kunjdesai/BreastCancerPrediction'
+    code: 'https://github.com/Aaronrao989/Image-Classification-using-CNN'
   }
 ]
 

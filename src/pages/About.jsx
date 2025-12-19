@@ -56,25 +56,25 @@ const AboutMe = () => {
             marginBottom: "1rem",
           }}
         >
-          Hi, I’m <strong>Kunj Desai</strong> — an aspiring{" "}
-          <strong>Artificial Intelligence Engineer</strong> and{" "}
-          <strong>Machine Learning enthusiast</strong> who loves turning ideas
-          into intelligent systems. I’m deeply fascinated by how data and
-          algorithms can shape the future of healthcare, automation, and
-          creativity in technology.
+          Hi, I’m <strong>Aaron Rao</strong> — a passionate{" "}
+          <strong>Computer Science Engineering student</strong> specializing in{" "}
+          <strong>Artificial Intelligence & Machine Learning</strong>. I enjoy
+          building intelligent systems that transform raw data into meaningful
+          insights.
         </p>
 
         <p style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.8)" }}>
-          Beyond code, I enjoy exploring design, experimenting with motion and
-          interaction, and finding ways to blend{" "}
-          <strong>artistic creativity</strong> with{" "}
-          <strong>technical precision</strong>. My goal is to build solutions
-          that not only perform — but also inspire.
+          I have hands-on experience in{" "}
+          <strong>Machine Learning, Natural Language Processing</strong>, and
+          data-driven application development. My interests lie in solving
+          real-world problems using AI, especially in sentiment analysis,
+          prediction systems, and interactive web-based ML applications.
         </p>
 
-        <p>
-            4th-year B.Tech AI Engineering student with hands-on experience in ML & DL Projects. Proficient in Python, scikitlearn,pytorch,tensorflow and data preprocessing. Seeking internship opportunities to apply skills and contribute to
-            impactful AI solutions.
+        <p style={{ fontSize: "1.1rem", color: "rgba(255,255,255,0.8)" }}>
+          I’m actively seeking <strong>internship opportunities</strong> where I
+          can apply my skills, learn from industry professionals, and contribute
+          to impactful AI-powered solutions.
         </p>
 
         {/* --- Education Section --- */}
@@ -131,7 +131,7 @@ const AboutMe = () => {
                     fontSize: "1.25rem",
                   }}
                 >
-                  B.Tech in Artificial Intelligence and Data Science
+                  B.Tech in Computer Science Engineering (AI & ML)
                 </h4>
                 <p
                   style={{
@@ -139,13 +139,15 @@ const AboutMe = () => {
                     marginBottom: "0.2rem",
                   }}
                 >
-                  <strong>S.C.E.T (Sarvajanik University)</strong> — Surat,
-                  Gujarat
+                  <strong>Dr. A.P.J. Abdul Kalam Technical University (AKTU)</strong>{" "}
+                  — Ghaziabad, Uttar Pradesh
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  4th Year (Pursuing) | GPA: 9.0
+                  CGPA: 7.02 (Current)
                 </p>
-                <p style={{ color: "rgba(255,255,255,0.7)" }}>2022 – 2026</p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>
+                  2023 – 2027
+                </p>
               </div>
             </motion.div>
 
@@ -176,7 +178,7 @@ const AboutMe = () => {
                     fontSize: "1.25rem",
                   }}
                 >
-                  Higher Secondary Education (12th Grade)
+                  Senior Secondary Education (12th Grade)
                 </h4>
                 <p
                   style={{
@@ -184,13 +186,14 @@ const AboutMe = () => {
                     marginBottom: "0.2rem",
                   }}
                 >
-                  <strong>R.S.M. Poonawala Experimental School</strong> — Ambika
-                  Niketan, Surat
+                  <strong>S.T. Francis School</strong> — Uttar Pradesh
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  Gujarat Board | Percentage: 78%
+                  CBSE Board | Percentage: 71.4%
                 </p>
-                <p style={{ color: "rgba(255,255,255,0.7)" }}>Completed in 2022</p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>
+                  Completed in 2023
+                </p>
               </div>
             </motion.div>
 
@@ -229,13 +232,14 @@ const AboutMe = () => {
                     marginBottom: "0.2rem",
                   }}
                 >
-                  <strong>R.S.M. Poonawala Experimental School</strong> — Surat,
-                  Gujarat
+                  <strong>S.T. Francis School</strong> — Uttar Pradesh
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  Gujarat Board | Percentage: 69%
+                  CBSE Board | Percentage: 93%
                 </p>
-                <p style={{ color: "rgba(255,255,255,0.7)" }}>Completed in 2020</p>
+                <p style={{ color: "rgba(255,255,255,0.7)" }}>
+                  Completed in 2021
+                </p>
               </div>
             </motion.div>
           </div>

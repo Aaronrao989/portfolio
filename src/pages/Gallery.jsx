@@ -7,41 +7,41 @@ const IMAGES = {
   personal: [
     {
       id: 1,
-      caption: "Lost in the beauty of the misty forest 🌲🌫️",
-      photos: ["/gallery/matheran.jpg", "/gallery/matheran2.jpg"],
+      caption: "AGRA Trip Memories! 🕌✨",
+      photos: ["/gallery/agra1.jpeg", "/gallery/agra2.jpeg"],
     },
     {
       id: 2,
       caption:
-        "Weekend getaway to clear my head 🌄 Sometimes inspiration strikes when you’re away from the screen.",
-      photos: ["/gallery/lonawala.jpg", "/gallery/lonawala2.jpg"],
+        "DEHRADUN Diaries: Nature's Embrace and City Vibes 🌄🏙️",
+      photos: ["/gallery/dehradun1.jpeg", "/gallery/dehradun2.jpeg"],
     },
   ],
   projects: [
     {
       id: 1,
       caption:
-        "It’s an AI-powered tool that understands what someone might be feeling based on their words.",
-      photos: ["/gallery/m.png", "/gallery/m2.jpeg"],
+        "Mindful Moments - AI-Powered Emotional Insight Tool",
+      photos: ["/gallery/mind1.png", "/gallery/mind2.png","/gallery/mind3.png", "/gallery/mind4.png"],
     },
     
     {
       id: 1,
       caption:
-        "📂ProfileX - Smart Data Profiler + Preprocessor",
-      photos: ["/gallery/profilex.jpeg", "/gallery/profilex2.jpeg","/gallery/profilex3.jpeg", "/gallery/profilex4.jpeg"],
+        "Cattle Breed Detection using Machine Learning 🐄",
+      photos: ["/gallery/cattle1.png", "/gallery/cattle2.png","/gallery/cattle3.png", "/gallery/cattle4.png"],
     },
   ],
   achievements: [
     {
       id: 1,
-      caption: "Solved 1000 LeetCode questions 🏆!",
-      photos: ["/gallery/leet.jpeg"],
+      caption: "Microsoft Hackathon Winner 🏆",
+      photos: ["/gallery/hack2.jpeg"],
     },
     {
       id: 2,
-      caption: "Technical Lead at SCET AI Club 🤖",
-      photos: ["/gallery/techlead.png"],
+      caption: "Team Old School",
+      photos: ["/gallery/hack1.jpeg"],
     },
   ],
 };
