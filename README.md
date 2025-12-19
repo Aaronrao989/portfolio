@@ -1,82 +1,56 @@
-# 💻 Kunj Desai — Portfolio Website
-Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
-It showcases my work, projects, skills, and journey as a developer passionate about **AI, ML, and Web Technologies**.
+# 🚀 Personal Portfolio – Aaron Rao
 
-🌐 **Website:** [[[kunj-Portfolio]]](https://kunj-desai.vercel.app/)
+Welcome to my **personal developer portfolio**, built using **React** and **Framer Motion** to showcase my skills, projects, and journey in **Artificial Intelligence & Machine Learning**.
 
-🖼️ **Screenshots**
-<img width="1902" height="994" alt="Screenshot 2025-11-03 232447" src="https://github.com/user-attachments/assets/6f78ceb0-363c-41e8-9eb9-a26fa814e8ac" />
-<img width="1894" height="992" alt="image" src="https://github.com/user-attachments/assets/8a6eeff0-3ebc-446c-a1ac-5f1a02279ac8" />
-<img width="1903" height="1044" alt="Screenshot 2025-11-04 153204" src="https://github.com/user-attachments/assets/355b1c4c-83e6-4465-9081-bff34bb3ad3b" />
+This portfolio highlights my academic background, technical expertise, hands-on projects, and links to my professional profiles — all wrapped in a modern, animated, and responsive UI.
+
 ---
 
-## 🚀 Features
+## 👨‍💻 About Me
 
-* 🎨 **Modern UI/UX** with black-based aesthetic theme
-* ⚡ Smooth **Framer Motion** animations
-* 💼 **Projects, Resume, and Contact sections**
-* 🧠 Tech-focused portfolio highlighting AI/ML projects
-* 📨 Functional contact form powered by **EmailJS**
-* 🧩 Responsive design for all screen sizes
+I’m **Aaron Rao**, a **Computer Science Engineering (AI & ML)** student passionate about building intelligent, data-driven applications. I enjoy working on **machine learning**, **natural language processing**, and **web-based AI solutions**, and I’m constantly learning to improve my problem-solving and development skills.
+
+I’m actively seeking **internship opportunities** where I can apply my skills and contribute to real-world AI projects.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category            | Tools / Libraries                        |
-| ------------------- | ---------------------------------------- |
-| **Frontend**        | React.js, HTML5, CSS3, JavaScript (ES6+) |
-| **Styling**         | Tailwind CSS / Custom CSS                |
-| **Animation**       | Framer Motion                            |
-| **Contact Form**    | EmailJS                                  |
-| **Version Control** | Git & GitHub                             |
-| **Deployment**      | Vercel / Netlify                         |
+- **Frontend:** React, JavaScript, HTML, CSS  
+- **Animations:** Framer Motion  
+- **AI / ML:** Python, Machine Learning, NLP, Naive Bayes  
+- **Data Handling:** Pandas, NumPy  
+- **Web Apps:** Streamlit  
+- **Version Control:** Git & GitHub  
 
 ---
 
-## ⚙️ Setup Instructions
+## 💼 Featured Projects
 
-To run this project locally:
+- **Amazon Reviews Sentiment Analyzer**  
+  NLP-based web application to classify customer reviews using machine learning.
 
-```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/kunj2803/kunjdesai-portfolio.git
-
-# 2️⃣ Navigate to project directory
-cd kunjdesai-portfolio
-
-# 3️⃣ Install dependencies
-npm install
-
-# 4️⃣ Run development server
-npm start or npm run dev
-```
-
-Now open [http://localhost:3000](http://localhost:3000) in your browser 🚀
+- **Employee Salary Prediction**  
+  Streamlit-based ML app that predicts salaries using regression techniques.
 
 ---
 
-## 📬 Contact
+## 🌐 Connect With Me
 
-If you’d like to collaborate or just say hi 👋, feel free to reach out!
-
-* 📧 **Email:** [kunjd2803@gmail.com](mailto:kunjd2803@gmail.com)
-* 💼 **LinkedIn:** [linkedin.com/in/kunj-desai-07717b293](https://www.linkedin.com/in/kunj-desai-07717b293/)
-
----
-
-## 🌟 Deployment
-
-Deployed seamlessly on **Vercel** for continuous integration and fast CDN delivery.
-Every push to the `main` branch triggers an automatic rebuild and deployment.
+- 🏆 LeetCode: https://leetcode.com/u/aaron58/  
+- 💻 GitHub: https://github.com/Aaronrao989  
+- 💼 LinkedIn: https://www.linkedin.com/in/aaron-rao-b988b1286/  
 
 ---
 
-### 🏁 License
+## 📄 Resume
 
-This project is open source and available under the [MIT License](LICENSE).
-Feel free to fork, use, and build upon it ⭐
+My resume is integrated directly into the portfolio and can also be downloaded from the site.
 
 ---
 
-> *“Showcasing my work and passion through technology 💻”*
+## ⭐ Feedback
+
+If you like this portfolio, feel free to **star the repository** or reach out to me for collaboration, feedback, or opportunities!
+
+Thanks for visiting! 😊
