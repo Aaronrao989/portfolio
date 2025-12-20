@@ -179,7 +179,7 @@ export default function Navbar() {
               flexDirection: "column",
               alignItems: "center",
               paddingTop: "4rem",
-              overflowY: "auto",
+              overflowY: "hidden",
               zIndex: 9999,
             }}
           >
