@@ -4,32 +4,26 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "../CSS/Gallery.css";
 
 const IMAGES = {
-  personal: [
-    {
-      id: 1,
-      caption: "AGRA Trip Memories! 🕌✨",
-      photos: ["/gallery/agra1.jpeg", "/gallery/agra2.jpeg"],
-    },
-    {
-      id: 2,
-      caption:
-        "DEHRADUN Diaries: Nature's Embrace and City Vibes 🌄🏙️",
-      photos: ["/gallery/dehradun1.jpeg", "/gallery/dehradun2.jpeg"],
-    },
-  ],
   projects: [
     {
       id: 1,
-      caption:
-        "Mindful Moments - AI-Powered Emotional Insight Tool",
-      photos: ["/gallery/mind1.png", "/gallery/mind2.png","/gallery/mind3.png", "/gallery/mind4.png"],
+      caption: "Mindful Moments - AI-Powered Emotional Insight Tool",
+      photos: [
+        "/gallery/mind1.png",
+        "/gallery/mind2.png",
+        "/gallery/mind3.png",
+        "/gallery/mind4.png",
+      ],
     },
-    
     {
-      id: 1,
-      caption:
-        "Cattle Breed Detection using Machine Learning 🐄",
-      photos: ["/gallery/cattle1.png", "/gallery/cattle2.png","/gallery/cattle3.png", "/gallery/cattle4.png"],
+      id: 2,
+      caption: "Cattle Breed Detection using Machine Learning 🐄",
+      photos: [
+        "/gallery/cattle1.png",
+        "/gallery/cattle2.png",
+        "/gallery/cattle3.png",
+        "/gallery/cattle4.png",
+      ],
     },
   ],
   achievements: [
@@ -46,7 +40,7 @@ const IMAGES = {
   ],
 };
 
-// ✨ Animation Variants
+// ✨ Page Animation
 const pageVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -66,7 +60,7 @@ const childVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-// ✨ Tab Switching Animations
+// ✨ Tab Switch Animation
 const tabContentVariants = {
   hidden: { opacity: 0, y: 30, scale: 0.98 },
   visible: {
@@ -79,25 +73,35 @@ const tabContentVariants = {
 };
 
 export default function Gallery() {
-  const [tab, setTab] = useState("personal");
+  const [tab, setTab] = useState("projects");
   const [zoom, setZoom] = useState({ img: null, post: null, index: 0 });
 
   const openZoom = (post, index) =>
     setZoom({ img: post.photos[index], post, index });
 
-  const closeZoom = () => setZoom({ img: null, post: null, index: 0 });
+  const closeZoom = () =>
+    setZoom({ img: null, post: null, index: 0 });
 
   const nextImage = () => {
     if (!zoom.post) return;
     const nextIndex = (zoom.index + 1) % zoom.post.photos.length;
-    setZoom({ ...zoom, img: zoom.post.photos[nextIndex], index: nextIndex });
+    setZoom({
+      ...zoom,
+      img: zoom.post.photos[nextIndex],
+      index: nextIndex,
+    });
   };
 
   const prevImage = () => {
     if (!zoom.post) return;
     const prevIndex =
-      (zoom.index - 1 + zoom.post.photos.length) % zoom.post.photos.length;
-    setZoom({ ...zoom, img: zoom.post.photos[prevIndex], index: prevIndex });
+      (zoom.index - 1 + zoom.post.photos.length) %
+      zoom.post.photos.length;
+    setZoom({
+      ...zoom,
+      img: zoom.post.photos[prevIndex],
+      index: prevIndex,
+    });
   };
 
   return (
@@ -115,7 +119,7 @@ export default function Gallery() {
 
       {/* 🧭 Tabs */}
       <motion.div className="tab-buttons" variants={childVariants}>
-        {["personal", "projects", "achievements"].map((type) => (
+        {["projects", "achievements"].map((type) => (
           <motion.button
             key={type}
             className={`tab ${tab === type ? "active" : ""}`}
@@ -128,10 +132,10 @@ export default function Gallery() {
         ))}
       </motion.div>
 
-      {/* 🖼️ Posts with Animation on Tab Switch */}
+      {/* 🖼️ Content */}
       <AnimatePresence mode="wait">
         <motion.div
-          key={tab} // Important for AnimatePresence to detect tab change
+          key={tab}
           className="post-feed"
           variants={tabContentVariants}
           initial="hidden"
@@ -146,6 +150,7 @@ export default function Gallery() {
               whileHover={{ y: -4 }}
             >
               <p className="caption">{post.caption}</p>
+
               <div
                 className={`photo-grid ${
                   post.photos.length > 1 ? "multi" : "single"
@@ -199,6 +204,7 @@ export default function Gallery() {
                 </button>
               </>
             )}
+
             <button className="close-btn" onClick={closeZoom}>
               <X size={28} />
             </button>

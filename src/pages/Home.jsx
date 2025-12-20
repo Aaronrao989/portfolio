@@ -26,9 +26,7 @@ export default function Home() {
     { img: githubLogo, title: 'GitHub', link: 'https://github.com/kunj2803' },
     { img: linkedinLogo, title: 'LinkedIn', link: 'https://www.linkedin.com/in/aaron-rao-b988b1286/' },
     { img: gmailLogo, title: 'Email', link: 'mailto:raoaaron077@gmail.com' },
-    { img: whatsappLogo, title: 'WhatsApp', link: 'https://wa.me/+919870378565' },
     { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/aaron_rao_8/' },
-    { img: facebookLogo, title: 'Facebook', link: 'https://www.facebook.com/aaron.rao.731/' },
   ]
 
   return (
