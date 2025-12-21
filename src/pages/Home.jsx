@@ -13,21 +13,13 @@ export default function Home() {
   ];
 
   const quickLinks = [
-    {
-      img: "/github.png",
-      title: "GitHub",
-      link: "https://github.com/kunj2803",
-    },
+    { img: "/github.png", title: "GitHub", link: "https://github.com/kunj2803" },
     {
       img: "/linkedin.png",
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/aaron-rao-b988b1286/",
     },
-    {
-      img: "/gmail.png",
-      title: "Email",
-      link: "mailto:raoaaron077@gmail.com",
-    },
+    { img: "/gmail.png", title: "Email", link: "mailto:raoaaron077@gmail.com" },
     {
       img: "/insta.png",
       title: "Instagram",
@@ -37,14 +29,13 @@ export default function Home() {
 
   return (
     <section className="home-section">
-      {/* Top Section */}
       <div className="home-top">
-        {/* Photo Section */}
+        {/* Photo */}
         <motion.div
+          className="photo-container"
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="photo-container"
         >
           <motion.div
             className="photo-ring"
@@ -68,12 +59,12 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Info Section */}
+        {/* Info */}
         <motion.div
+          className="home-info"
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="home-info"
         >
           <h1 className="home-title">
             Hi, I’m{" "}
@@ -91,7 +82,6 @@ export default function Home() {
             Learning
           </p>
 
-          {/* Profession Tags */}
           <div className="profession-tags">
             {professions.map((role, i) => (
               <motion.div
@@ -109,7 +99,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Info Cards */}
           <div className="info-cards">
             {[
               { label: "📍 Location", value: "Ghaziabad, Uttar Pradesh, India" },
