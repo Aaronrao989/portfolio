@@ -9,14 +9,14 @@ const PROJECTS = [
     ss: '/bpa.png',
     tech: ['PyTorch', 'Torchvision', 'OpenCV', 'Matplotlib','CNN'],
     live: 'https://indianbreedclassifier.streamlit.app/',
-    code: 'https://github.com/Aaronrao989/breed'
+    code: 'https://github.com/Aaronrao989/Cattle-Breed-Classification'
   },
   {
   title: '🧠 Multimodal Analysis for Mental Health Detection',
   desc: 'Mental health challenges are often expressed subtly online through a combination of language, emoji usage, and posting behavior.',
   ss: '/mentalhealth.jpg',
   tech: ['Python', 'XGBoost', 'Scikit-learn', 'Emoji Sentiment Lexicon'],
-  live: '#',
+  live: 'https://sentimentforsocialmedia.streamlit.app/',
   code: 'https://github.com/Aaronrao989/sentiment-insights-for-social-media-posts'
   },
   {
