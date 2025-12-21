@@ -1,47 +1,45 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import "../CSS/Home.css"
-import '../index.css' 
-
-
-// 🖼️ Import Assets
-import photo from '../../public/photo.jpg'
-import githubLogo from '../../public/github.png'
-import linkedinLogo from '../../public/linkedin.png'
-import gmailLogo from '../../public/gmail.png'
-import whatsappLogo from '../../public/whatsapp.png'
-import instagramLogo from '../../public/insta.png'
-import facebookLogo from '../../public/facebook.png'
+import React from "react";
+import { motion } from "framer-motion";
+import "../CSS/Home.css";
+import "../index.css";
 
 export default function Home() {
   const professions = [
-    'AI Enthusiast',
-    'Machine Learning Engineer',
+    "AI Enthusiast",
+    "Machine Learning Engineer",
     "Deep Learning Expert",
-    'Computer Vision Researcher',
-    'Developer',
-  ]
+    "Computer Vision Researcher",
+    "Developer",
+  ];
 
   const quickLinks = [
-    { img: githubLogo, title: 'GitHub', link: 'https://github.com/kunj2803' },
-    { img: linkedinLogo, title: 'LinkedIn', link: 'https://www.linkedin.com/in/aaron-rao-b988b1286/' },
-    { img: gmailLogo, title: 'Email', link: 'mailto:raoaaron077@gmail.com' },
-    { img: instagramLogo, title: 'Instagram', link: 'https://www.instagram.com/aaron_rao_8/' },
-  ]
+    {
+      img: "/github.png",
+      title: "GitHub",
+      link: "https://github.com/kunj2803",
+    },
+    {
+      img: "/linkedin.png",
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/aaron-rao-b988b1286/",
+    },
+    {
+      img: "/gmail.png",
+      title: "Email",
+      link: "mailto:raoaaron077@gmail.com",
+    },
+    {
+      img: "/insta.png",
+      title: "Instagram",
+      link: "https://www.instagram.com/aaron_rao_8/",
+    },
+  ];
 
   return (
     <section className="home-section">
-      {/* Typing Effect Styles */}
-      <style>
-        {`
-          @keyframes typing { from { width: 0; } to { width: 100%; } }
-          @keyframes blink { 50% { border-color: transparent; } }
-        `}
-      </style>
-
-      {/* Top Section: Photo + Info */}
+      {/* Top Section */}
       <div className="home-top">
-        {/* Left: Glowing Photo */}
+        {/* Photo Section */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -49,27 +47,28 @@ export default function Home() {
           className="photo-container"
         >
           <motion.div
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
             className="photo-ring"
+            animate={{ rotate: [0, 360] }}
+            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
           />
+
           <motion.div
-            animate={{ y: [0, -8, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
             className="photo-frame"
+            animate={{ y: [0, -8, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
             <motion.img
-              src={photo}
-              alt="Kunj Desai"
-              initial={{ scale: 0.8, opacity: 0 }}
+              src="/photo.jpg"
+              alt="Aaron Rao"
+              className="profile-photo"
+              initial={{ scale: 0.85, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1 }}
-              className="profile-photo"
             />
           </motion.div>
         </motion.div>
 
-        {/* Right: Info Section */}
+        {/* Info Section */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -77,47 +76,61 @@ export default function Home() {
           className="home-info"
         >
           <h1 className="home-title">
-            Hi, I’m{' '}
+            Hi, I’m{" "}
             <motion.span
-              animate={{ backgroundPositionX: ['0%', '200%'] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               className="home-name"
+              animate={{ backgroundPositionX: ["0%", "200%"] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
             >
               Aaron Rao
             </motion.span>
           </h1>
 
-          {/* Typing Animated Text */}
           <p className="typing-effect">
-            Artificial Intelligence Engineer | Frontend Developer | Machine Learning
+            Artificial Intelligence Engineer | Frontend Developer | Machine
+            Learning
           </p>
 
           {/* Profession Tags */}
-          <motion.div className="profession-tags">
+          <div className="profession-tags">
             {professions.map((role, i) => (
-              <motion.div key={i} whileHover={{ scale: 1.05, background: 'linear-gradient(90deg,var(--accent),var(--accent-2))' }} transition={{ type: 'spring', stiffness: 200 }} className="profession-tag">
+              <motion.div
+                key={i}
+                className="profession-tag"
+                whileHover={{
+                  scale: 1.05,
+                  background:
+                    "linear-gradient(90deg,var(--accent),var(--accent-2))",
+                }}
+                transition={{ type: "spring", stiffness: 200 }}
+              >
                 {role}
               </motion.div>
             ))}
-          </motion.div>
+          </div>
 
           {/* Info Cards */}
-          <motion.div className="info-cards">
+          <div className="info-cards">
             {[
-              { label: '📍 Location', value: 'Ghaziabad, Uttar Pradesh, India' },
-              { label: '💼 Expertise', value: 'AI/ML, Problem Solving' },
-              { label: '📧 Contact', value: 'raoaaron077@gmail.com' },
+              { label: "📍 Location", value: "Ghaziabad, Uttar Pradesh, India" },
+              { label: "💼 Expertise", value: "AI/ML, Problem Solving" },
+              { label: "📧 Contact", value: "raoaaron077@gmail.com" },
             ].map((info, i) => (
-              <motion.div key={i} whileHover={{ y: -4, scale: 1.05 }} transition={{ type: 'spring', stiffness: 250 }} className="info-card">
+              <motion.div
+                key={i}
+                className="info-card"
+                whileHover={{ y: -4, scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 250 }}
+              >
                 <strong>{info.label}</strong>
                 <p>{info.value}</p>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </motion.div>
       </div>
 
-      {/* Bottom Quick Links */}
+      {/* Quick Links */}
       <motion.div className="quick-links">
         <h2 className="quick-links-title">Connect with me</h2>
         <div className="quick-links-list">
@@ -125,23 +138,24 @@ export default function Home() {
             <motion.a
               key={i}
               href={item.link}
-              title={item.title}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.15, rotate: 5 }}
-              transition={{ type: 'spring', stiffness: 250 }}
+              transition={{ type: "spring", stiffness: 250 }}
             >
               <motion.img
                 src={item.img}
                 alt={item.title}
-                whileHover={{ filter: 'drop-shadow(0 0 15px var(--accent)) brightness(1.2)' }}
                 className="quick-link-img"
+                whileHover={{
+                  filter:
+                    "drop-shadow(0 0 15px var(--accent)) brightness(1.2)",
+                }}
               />
             </motion.a>
           ))}
         </div>
       </motion.div>
-
     </section>
-  )
+  );
 }
