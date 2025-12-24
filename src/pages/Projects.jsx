@@ -40,8 +40,8 @@ const PROJECTS = [
     desc: 'A simple AI-powered web app that analyzes Amazon product reviews to determine whether they are Positive, Neutral, or Negative — along with a confidence score.',
     ss: '/sentiment.webp',
     tech: ['Python', 'NLTK (Text preprocessing)', 'Scikit-learn (Model training)', 'Pandas & NumPy (Data handling)'],
-    live: 'https://sentiment-analyzer-yc9ljmwoasdk55f53qg7ym.streamlit.app/',
-    code: 'https://github.com/Aaronrao989/Sentiment-Analysis-of-Product-Reviews-using-Naive-Bayes'
+    live: 'https://amazonsentimentanalyzer.streamlit.app/',
+    code: 'https://github.com/Aaronrao989/sentiment-analyzer'
   },
   {
     title: '🧠 Smart Product Pricing — Multimodal ML Project',
@@ -56,7 +56,7 @@ const PROJECTS = [
     desc: 'This project is a beginner-friendly image classifier built using a Convolutional Neural Network (CNN) and deployed via Streamlit.',
     ss: '/cnn.png',
     tech: ['TensorFlow / Keras', 'NumPy' ,'Pillow'],
-    live: '#',
+    live: 'https://image-classification-using--cnn.streamlit.app/',
     code: 'https://github.com/Aaronrao989/Image-Classification-using-CNN'
   }
 ]
